@@ -113,12 +113,7 @@
   }
 
   function atom(extra) {
-    return '<span class="relative inline-flex items-center justify-center w-9 h-9 ' + (extra || '') + '">' +
-      '<span class="absolute inset-0 rounded-full border-2 border-atomic"></span>' +
-      '<span class="absolute w-9 h-[2px] bg-teal rotate-45"></span>' +
-      '<span class="absolute w-9 h-[2px] bg-teal -rotate-45"></span>' +
-      '<span class="w-2.5 h-2.5 rounded-full bg-atomic"></span>' +
-    '</span>';
+    return '<span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white overflow-hidden shrink-0 ' + (extra || '') + '"><img src="img/logo.png" alt="Atomic Tattoo logo" class="w-full h-full object-contain"></span>';
   }
 
   function renderHeader(active) {
